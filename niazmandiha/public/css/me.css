@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Yekan;
+    src: url("fonts/Yekan.eot") , url("fonts/Yekan.woff"), url("fonts/Yekan.otf"),url("fonts/Yekan.svg");
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family:Yekan;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family:Yekan;
+    font-size:14px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul , li{
+    list-style: none;
+}
+.menu-item{
+    position: static ;
+    /*top: auto;*/
+
+}
+.menu-item .menu-icon{
+    position: absolute;
+    top: auto;
+    left:10px;
+}
+.menu-glyph{
+    margin:0px 5px 0px 5px ;
+    right:5px;
+}
+.menu-user-icon{
+    margin-left: 15px;
+
+}
+.bookmark-post{
+    position: absolute;
+    top:10px;
+    left:10px;
+    width: 20px;
+    height: 38px;
+    background-image: url("../image/check.PNG");
+}
+.enable{
+    width: 20px;
+    height: 38px;
+    background-image: url("../image/check-enable.PNG");
+}
+.New__form{
+    heigh:auto;
+    width:100%;
+    padding:15px;
+    box-sizing: border-box;
+
+}
+.New__form form >  div {
+    width:25%;
+    min-width:350px;
+    margin-left:15%;
+}
+.emphasis-text{
+    font-size:16px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-22{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.red{
+    color: red;
+    margin: 10px;
+}
+.btn-margin{
+    margin: 10px 5px 10px 5px;
+}
+
+.Form-item{
+    width:100%;
+    font-size:16px;
+    margin:15px 0;
+    line-height:40px;
+    clear: both;
+    overflow: hidden;
+}
+.Form-item input , .Form-item textarea , .Form-item select{
+    min-width:200px;
+    float :left;
+}
+.New__button{
+    display: inline-block;
+    padding:15px;
+    background:green;
+    border-radius:5px;
+    font-size:14px;
+    font-family:inherit;
+    color: white ;
+    text-decoration: none;
+    transition:ease .2s all;
+}
+.New__button:hover{
+    color: #ffffff;
+    opacity:.8;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px)
+{
+    .New__form form >  div{
+        width:100%;
+        min-width:0;
+    }
+}
+.user-image{
+margin: auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* width and height can be anything, as long as they're equal */
+}
+.li-user{
+    text-align: center;
+}
+.li-head{
+    background-color: #3c8dbc;
+    padding: 20px 0  ;
+    text-align: center;
+}
+.user-name{
+    color: white;
+
+}
