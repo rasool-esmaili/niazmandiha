@@ -24,7 +24,7 @@
 
 <div class="New__form col-lg-12 col-sm-12">
 
-    <form class="form-inline" action="/new" method="post" enctype="multipart/form-data">
+    <form class="form-inline" action="{{url('/new')}}" method="post" enctype="multipart/form-data">
 
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

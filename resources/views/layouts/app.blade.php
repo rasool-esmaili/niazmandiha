@@ -58,7 +58,7 @@
                             <li><a href="{{ url('/register') }}">ثبت نام / ارسال آگهی </a></li>
                         @else
                             <li>
-                            <button  onclick={window.location.assign("/new")} href="/new" class="New__button">
+                            <button  onclick={window.location.assign("{{url('/new')}}")} href="/new" class="New__button">
                                 <span style="color:white; margin: 0 0 0 0 ; " class="glyphicon glyphicon-plus" ></span>
                                 ارسال آگهی
                             </button></li>

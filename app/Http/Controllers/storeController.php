@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\categories;
 use App\Electronic;
 use App\Estate;
 use App\Post;
@@ -43,10 +44,34 @@ class storeController extends Controller
                 ->withInput();
         }
 
-
         $path=null;
+      //  dump($request->cat2);
+        $category = categories::where('name','like',$request->cat2)->first();
+        if( ! $category instanceof  categories){
+            dump($request->cat2);
+            die(dump($category));
+        }
+        //die(dump($category->id));
+       // die(dump($category));
+        if ($request->file('photo') != null) {
+            $path = request()->file('photo')->store('photo');}
+        $post = new Post();
+        $post->topic = request()->topic;
+        $post->content = request()->contents;
+        $post->price = request()->price;
+        $post->tel = request()->tel;
+        $post->area = request()->area;
+        $post->user_id = Auth::id();
+        $post->photo = $path;
+        $post->category_id=$category->id;
+        $post->details="{}";
+        $post->save();
+        return view('pages.new',compact('cat'));
+
+die("dsf");
         switch(request()->cat1)
         {
+
             case 'estates' :
 
                 $rentprice = null;

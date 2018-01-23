@@ -9,7 +9,8 @@
         "laravel/framework": "5.3.*",
         "anhskohbo/no-captcha": "^2.2",
         "laravel/scout": "^2.0",
-        "algolia/algoliasearch-client-php": "^1.13"
+        "algolia/algoliasearch-client-php": "^1.13",
+        "barryvdh/laravel-ide-helper": "^2.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

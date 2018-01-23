@@ -36,27 +36,27 @@ function ChangeHandler(event){
     var cats = {
         "cat2" : [
             {"value" : "zero" , "text" : "  لطفا انتخاب نمایید ..."},
-            {"value" : "by-home", "text" : "خرید خانه"},
-            {"value" : "rental-home" , "text" : "اجاره مسکونی"},
-            {"value" : "by-shop" , "text" : "خرید تجاری"},
-            {"value" : "rental-shop", "text" : "اجاره تجاری" },
-            {"value" : "villa" , "text" : "ویلا"}
+            {"value" : "خرید خانه", "text" : "خرید خانه"},
+            {"value" : "اجاره مسکونی" , "text" : "اجاره مسکونی"},
+            {"value" : "خرید تجاری" , "text" : "خرید تجاری"},
+            {"value" : "اجاره تجاری", "text" : "اجاره تجاری" },
+            {"value" : "ویلا" , "text" : "ویلا"}
         ],
         "cat3": [
             {"value" : "zero" , "text" : " لطفا انتخاب نمایید ..."},
-            {"value" : "mobile", "text" : "موبایل و تبلت"},
-            {"value" : "simcart" , "text" : "سیم کارت"},
-            {"value" : "computer" , "text" : "کامپیوتر"},
-            {"value" : "consol", "text" : "کنسول و بازی" },
-            {"value" : "phone" , "text" : "تلفن رومیزی"}
+            {"value" : "موبایل و تبلت", "text" : "موبایل و تبلت"},
+            {"value" : "سیم کارت" , "text" : "سیم کارت"},
+            {"value" : "کامپیوتر" , "text" : "کامپیوتر"},
+            {"value" : "کنسول و بازی", "text" : "کنسول و بازی" },
+            {"value" : "تلفن رومیزی" , "text" : "تلفن رومیزی"}
         ],
         "cat4": [
             {"value" : "zero" , "text" : " لطفا انتخاب نمایید ..."},
-            {"value" : "mobile", "text" : "موبایل و تبلت"},
-            {"value" : "simcart" , "text" : "سیم کارت"},
-            {"value" : "computer" , "text" : "کامپیوتر"},
-            {"value" : "consol", "text" : "کنسول و بازی" },
-            {"value" : "phone" , "text" : "تلفن رومیزی"}
+            {"value" : "خودرو سواری", "text" : "خودرو سواری"},
+            {"value" : "قطعات خودرد" , "text" : "قطعات خودرد"},
+            {"value" : "موتور سیکلت" , "text" : "موتور سیکلت"},
+            {"value" : "قایق", "text" : "قایق" },
+            {"value" : "ماشین سنگین" , "text" : "ماشین سنگین"}
         ]
     };
     var selectedCat = cats[event[event.selectedIndex].id];
